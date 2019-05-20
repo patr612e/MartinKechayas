@@ -5,7 +5,12 @@ body {
 header {
     background-color: whitesmoke;
     height: 100vh;
-    width: 10vw;
+    width: 100px;
     position: fixed;
 }
 
+.video-background {
+    position: absolute;
+    width: 100%;
+    left: 100px;
+}
