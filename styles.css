@@ -33,14 +33,14 @@ nav {
 
 }
 
-.cocoon_tekst {
+.cocoon_titel {
 
 	transform: rotate(90deg);
-	margin-top: 200px;
+/*	position: absolute;*/
 
 }
 
 .cocoon img {
-
 	width: 80%;
+/*	position: absolute;*/
 }
