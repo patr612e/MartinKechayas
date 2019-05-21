@@ -1,5 +1,163 @@
 footer {
 	display: grid;
-	grid-gap: 1px;
+	grid-gap: 10px;
 	grid-template-columns: 1fr;
+	background-color: #D6D6D6;
+}
+
+.logo_footer {
+	margin-left: 2.5em;
+	margin-top: 5em;
+}
+
+li {
+	list-style-type: none;
+	color: black;
+}
+
+.footer-titel {
+	font-weight: bold;
+	margin-left: 2.5em;
+}
+
+a {
+
+	text-decoration: none;
+	color: black;
+}
+
+.projekter_footer {
+	margin-top: 3em;
+}
+
+.nyhedsbrev_footer {
+	margin-left: 2.5em;
+	margin-top: 1em;
+}
+
+.copyright_footer {
+	margin-left: 2.5em;
+	margin-top: 1em;
+	margin-bottom: 5em;
+}
+
+.copyright_footer p {
+	margin: 0;
+}
+
+.nyhedsbrev_footer p {
+	font-weight: bold;
+}
+
+input[type=text] {
+	width: 250px;
+}
+
+input[type=text],
+input[type=submit] {
+	background-color: #D6D6D6;
+	border: 0.5px solid black;
+	padding: 8px;
+	color: black;
+
+}
+
+
+@media screen and (min-width: 700px) {
+
+	footer {
+		grid-template-columns: 10em 1fr 1fr 10em;
+		grid-gap: 0;
+	}
+
+	.logo_footer {
+		grid-column: 2/3;
+		margin-bottom: 3em;
+	}
+
+	.projekter_footer {
+
+		grid-column: 2/3;
+	}
+
+	.presse_footer {
+		grid-column: 2/3;
+	}
+
+	.nyhedsbrev_footer {
+		grid-column: 2/4;
+		margin-top: 2em;
+	}
+
+	.kontakt_footer {
+		margin-top: 3em;
+	}
+
+	.copyright_footer {
+		grid-column: 2/4;
+		margin-bottom: 10em;
+		margin-top: 1em;
+	}
+
+	.kontakt_footer {
+		margin-left: 0;
+	}
+
+	.followus_footer {
+		margin-left: 5em;
+	}
+
+
+}
+
+@media screen and (min-width: 1000px) {
+
+	footer {
+		grid-template-columns: 10em 1fr 1fr 1fr 1fr 10em;
+	}
+
+	.logo_footer {
+		grid-column: 2/3;
+		margin-left: 2.5em;
+	}
+
+	.projekter_footer {
+
+		grid-column: 2/3;
+		margin-top: 8em;
+	}
+
+	.kontakt_footer {
+		margin-top: 8em;
+	}
+
+	.presse_footer {
+		grid-column: 4/5;
+		margin-top: 8em;
+		margin-left: 3em;
+
+	}
+
+	.nyhedsbrev_footer {
+		grid-column: 2/4;
+		margin-top: 5em;
+		margin-bottom: 5em;
+	}
+
+
+	.copyright_footer {
+		grid-column: 4/6;
+		margin-top: 8em;
+		margin-bottom: 5em;
+		text-align: right;
+	}
+
+	.followus_footer {
+		margin-top: 8em;
+	}
+
+	input[type=text] {
+		width: 300px;
+	}
+
 }
