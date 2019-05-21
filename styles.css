@@ -1,46 +1,119 @@
 body {
-	margin: 0;
+    margin: 0;
 }
 
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+
 header {
-	width: 100%;
-	height: 70px;
-	position: absolute;
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    background-color: rgba(231, 239, 53, 0.62);
 }
 
 nav {
-	display: none;
+    display: none;
 }
 
 .grid-container {
 
-	display: grid;
-	grid-gap: 1px;
-	grid-template-columns: 1fr;
+    display: grid;
+    grid-gap: 4em;
+    grid-template-columns: 1fr;
 }
 
 
+
+
 .video-background {
-
-	width: 100%;
-
+    width: 100%;
 }
 
 
 .projekter_tekst {
+    padding: 2em;
 
-	padding: 2em;
+
+}
+
+
+.cocoon {
+    position: relative;
 
 }
 
 .cocoon_titel {
-
-	transform: rotate(90deg);
-/*	position: absolute;*/
+    position: absolute;
+    transform: rotate(90deg);
+    left: 60%;
+    top: 15vh;
+    padding: 0;
+    font-size: 1.7em;
+    margin: 0;
+    white-space: nowrap;
 
 }
 
 .cocoon img {
-	width: 80%;
-/*	position: absolute;*/
+    width: 80%;
+    border: 1px solid red;
+}
+
+.bigback img {
+    width: 80%;
+    border: 1px solid red;
+}
+
+.bigback_titel {}
+
+
+@media screen and (min-width: 700px) {
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+
+    .grid-container {
+        grid-template-columns: 7em 1fr 1fr;
+    }
+
+    .splashvideo {
+        margin: 0em 0em 0em 7em;
+    }
+
+    .video-background {
+        max-height: 90vh;
+
+
+    }
+
+    header {
+        width: 11em;
+        height: 100vh;
+        background-color: rgba(231, 239, 53, 0.62);
+        position: fixed;
+
+    }
+
+    .projekter {
+        grid-column: 2/3
+    }
+
+    .cocoon {
+        grid-column: 2/3;
+    }
 }
