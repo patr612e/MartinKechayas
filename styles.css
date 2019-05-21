@@ -18,6 +18,7 @@ header {
     width: 100%;
     height: 70px;
     position: absolute;
+    background-color: rgba(231, 239, 53, 0.62);
 }
 
 nav {
@@ -30,6 +31,8 @@ nav {
     grid-gap: 4em;
     grid-template-columns: 1fr;
 }
+
+
 
 
 .video-background {
@@ -85,11 +88,32 @@ nav {
 @media screen and (min-width: 1000px) {
 
     .grid-container {
-        grid-template-columns: 100px 1fr 1fr;
+        grid-template-columns: 7em 1fr 1fr;
+    }
+
+    .splashvideo {
+        margin: 0em 0em 0em 7em;
     }
 
     .video-background {
-        max-height: 80vh;
-        width: 100%;
+        max-height: 90vh;
+
+
+    }
+
+    header {
+        width: 11em;
+        height: 100vh;
+        background-color: rgba(231, 239, 53, 0.62);
+        position: fixed;
+
+    }
+
+    .projekter {
+        grid-column: 2/3
+    }
+
+    .cocoon {
+        grid-column: 2/3;
     }
 }
