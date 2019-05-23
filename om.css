@@ -2,7 +2,9 @@ footer {
 	display: grid;
 	grid-gap: 10px;
 	grid-template-columns: 1fr;
-	background-color: #D6D6D6;
+	background-color: #EAE9E1;
+	font-family: 'Raleway', sans-serif;
+
 }
 
 .logo_footer {
@@ -13,11 +15,15 @@ footer {
 li {
 	list-style-type: none;
 	color: black;
+	font-size: 0.8em;
+	line-height: 1.4em;
 }
 
 .footer-titel {
-	font-weight: bold;
-	margin-left: 2.5em;
+	font-weight: 600;
+	font-size: 0.9em;
+	text-transform: uppercase;
+	line-height: 1.7em;
 }
 
 a {
@@ -33,12 +39,14 @@ a {
 .nyhedsbrev_footer {
 	margin-left: 2.5em;
 	margin-top: 1em;
+
 }
 
 .copyright_footer {
-	margin-left: 2.5em;
-	margin-top: 1em;
+	font-size: 0.7em;
+	margin-left: 3.5em;
 	margin-bottom: 5em;
+
 }
 
 .copyright_footer p {
@@ -47,20 +55,22 @@ a {
 
 .nyhedsbrev_footer p {
 	font-weight: bold;
+	margin: 0;
 }
 
 input[type=text] {
-	width: 250px;
+	width: 200px;
 }
 
 input[type=text],
 input[type=submit] {
-	background-color: #D6D6D6;
+	background-color: #EAE9E1;
 	border: 0.5px solid black;
 	padding: 8px;
 	color: black;
 
 }
+
 
 
 @media screen and (min-width: 700px) {
@@ -97,6 +107,7 @@ input[type=submit] {
 		grid-column: 2/4;
 		margin-bottom: 10em;
 		margin-top: 1em;
+		margin-left: 3.5em;
 	}
 
 	.kontakt_footer {
@@ -104,9 +115,12 @@ input[type=submit] {
 	}
 
 	.followus_footer {
-		margin-left: 5em;
+		margin-left: 0em;
 	}
 
+	input[type=text] {
+		width: 200px;
+	}
 
 }
 
@@ -140,7 +154,7 @@ input[type=submit] {
 
 	.nyhedsbrev_footer {
 		grid-column: 2/4;
-		margin-top: 5em;
+		margin-top: 4.5em;
 		margin-bottom: 5em;
 	}
 
@@ -150,14 +164,24 @@ input[type=submit] {
 		margin-top: 8em;
 		margin-bottom: 5em;
 		text-align: right;
+		margin-right: 5em;
 	}
 
 	.followus_footer {
 		margin-top: 8em;
+		margin-left: 5em;
 	}
 
 	input[type=text] {
-		width: 300px;
+		width: 200px;
+	}
+
+}
+
+
+@media screen and (min-width: 1300px) {
+	input[type=text] {
+		width: 250px;
 	}
 
 }

@@ -2,67 +2,86 @@
 <html lang="">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="dianaburger.css">
+	<title></title>
+	<link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
 
-    <!--HEADER START-->
-    <nav>
-        <!--        <div class="wrapper">-->
+	<!--HEADER START-->
 
-        <label for="toggle">&#9776;</label>
-        <input type="checkbox" id="toggle" />
-
-        <div class="menu">
-            <a href="index.html"><span>logo</span></a>
-            <a href="#">Projekter</a>
-            <a href="#">Om mig</a>
-            <a href="#">Kontakt</a>
-        </div>
-        <!--        </div>-->
-    </nav>
-
-    <!--HEADER SLUT-->
+	<nav class="burgermenu">
+		<div id="menuknap">☰</div>
+		<div id="menu" class="hidden">
+			<img src="logom.png" class="logo_burger">
 
 
+			<div class="burgermenu-punkter">
+				<li><a href="index.html">Projekter</a></li>
+				<li><a href="">Om</a></li>
+				<li><a href="">Kontakt</a></li>
+				<li><a href="">Begivenheder</a></li>
+			</div>
+
+			<div class="some_burger">
+				<a href="https://www.instagram.com/MARTINKECHAYAS/"><i class="fa">&#xf16d;</i></a>
+				<a href="https://www.facebook.com/martin.kechayas"><i class="fa">&#xf09a;</i></a>
+				<a href="https://dk.linkedin.com/in/martin-kechayas-131a4117"><i class="fa">&#xf0e1;</i></a>
+			</div>
+		</div>
+	</nav>
+
+	<!--HEADER SLUT-->
 
 
 
-    <!--MAIN START-->
-
-    <div class="grid-container">
-
-        <div class="splashvideo">
-            <video autoplay loop muted plays-inline class="video-background">
-                <source src="Sunset-Lapse.mp4" type="video/mp4">
-            </video>
-        </div>
-
-        <div class="projekter">
-            <div class="projekter_tekst">
-
-                <h1>PROJEKTER</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat repudiandae esse, provident ipsa libero similique fugit voluptatum officia itaque mollitia omnis ut in. Nobis culpa architecto cupiditate, sint molestias commodi voluptas libero quasi blanditiis aliquam ipsam corporis enim accusantium, sequi consectetur, ratione excepturi? Atque eius eaque doloremque laborum quae, modi a harum maxime, rem nobis beatae. Ipsum temporibus, eaque tempora soluta fugit beatae sequi quisquam molestiae. Eius quos maiores atque recusandae quaerat. Beatae laudantium exercitationem veniam laborum pariatur corporis ad harum. Commodi eius, soluta veritatis quaerat tenetur vitae eaque quas quos minima inventore iste ut officiis, accusantium reprehenderit. Amet, maxime?
-                </p>
-            </div>
-        </div>
-
-        <div class="cocoon">
-
-            <div class="cocoon_titel">
-                <h2>Cocoon Lounge</h2>
-            </div>
-
-            <img src="Cocoon_front.png" alt="Cocoon">
-
-        </div>
 
 
-        <!--
+	<!--MAIN START-->
+
+	<div class="grid-container">
+
+		<div class="header-menu">
+			<ul>
+				<li>Projekter</li>
+				<li>Om</li>
+				<li>Kontakt</li>
+				<li>Begivenheder</li>
+			</ul>
+		</div>
+		<div class="splashvideo">
+			<video autoplay loop muted plays-inline class="video-background">
+				<source src="Sunset-Lapse.mp4" type="video/mp4">
+			</video>
+		</div>
+
+		<div class="projekter">
+			<div class="projekter_tekst">
+
+				<h1>PROJEKTER</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat repudiandae esse, provident ipsa libero similique fugit voluptatum officia itaque mollitia omnis ut in. Nobis culpa architecto cupiditate, sint molestias commodi voluptas libero quasi blanditiis aliquam ipsam corporis enim accusantium, sequi consectetur, ratione excepturi? Atque eius eaque doloremque laborum quae, modi a harum maxime, rem nobis beatae. Ipsum temporibus, eaque tempora soluta fugit beatae sequi quisquam molestiae. Eius quos maiores atque recusandae quaerat. Beatae laudantium exercitationem veniam laborum pariatur corporis ad harum. Commodi eius, soluta veritatis quaerat tenetur vitae eaque quas quos minima inventore iste ut officiis, accusantium reprehenderit. Amet, maxime?
+				</p>
+			</div>
+		</div>
+
+		<div class="cocoon">
+
+			<div class="cocoon_titel">
+				<h2>Cocoon Lounge</h2>
+			</div>
+
+			<img src="Cocoon_front.png" alt="Cocoon">
+
+		</div>
+
+
+		<!--
         <div class="bigback">
             <div class="bigback_titel">
                 <h2>Big Back Chair</h2>
@@ -79,17 +98,55 @@
 
         <div class="woody"></div>
 -->
-    </div>
+	</div>
 
 
-    <!--MAIN SLUT-->
+	<!--MAIN SLUT-->
 
-    <!--FOOTER START-->
+	<!--FOOTER START-->
 
-    <footer>
+	<footer>
 
-    </footer>
-    <!--FOOTER SLUT-->
+	</footer>
+	<!--FOOTER SLUT-->
+
+	<script>
+		window.addEventListener("load", sidenVises);
+
+
+		function sidenVises() {
+			console.log("siden vises!");
+			// registrer klik på menu-knap
+			document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+		}
+
+		function toggleMenu() {
+			console.log("Toggle menu");
+			document.querySelector("#menu").classList.toggle("hidden");
+
+			let erSkjult = document.querySelector("#menu").classList.contains("hidden");
+
+			if (erSkjult == true) {
+				//menuen er nu skjult - ændr menuknap til lll
+				document.querySelector("#menuknap").textContent = "☰";
+				document.querySelector(".grid-container").classList.remove("hidden");
+
+				// tilføje scroll igen
+				document.querySelector("body").classList.remove("overflow")
+				document.querySelector(".burgermenu").classList.remove("background");;
+			} else {
+				//menuen er nu vist - ændr menuknap til x
+				document.querySelector("#menuknap").textContent = "X"
+				document.querySelector(".grid-container").classList.add("hidden");
+
+				// fjerne muligheden for at scrolle
+				document.querySelector("body").classList.add("overflow");
+
+				document.querySelector(".burgermenu").classList.add("background");
+
+			}
+		}
+	</script>
 </body>
 
 </html>
