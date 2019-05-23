@@ -13,9 +13,11 @@ h6 {
     margin: 0;
 }
 
-.responsive {
-    width: 100%;
-    height: auto;
+
+
+
+div {
+    padding: 0.5em;
 }
 
 /* ---------MENU---------- */
@@ -39,7 +41,7 @@ h6 {
 
 .video-background {
     width: 100%;
-    background-position:
+
 }
 
 
@@ -56,9 +58,39 @@ h6 {
     z-index: 1;
 }
 
-.cocoon_billede {
-    border: 1px red solid
+.tembo_titel {
+    font-size: 1.7em;
+    white-space: nowrap;
+    z-index: 1;
 }
+
+.tembo_tekst {
+    z-index: 1;
+}
+
+.hook_titel {
+    font-size: 1.7em;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.hook_tekst {
+    z-index: 1;
+}
+
+.pendant_titel {
+    font-size: 1.7em;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.pendant_tekst {
+    z-index: 1;
+}
+
+
+
+
 
 
 
@@ -68,6 +100,11 @@ h6 {
 
     .grid-container {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto 75px auto 75px 75px auto 100px auto 75px 75px;
+    }
+
+    img {
+        width: 100%;
     }
 
     .splashvideo {
@@ -75,22 +112,88 @@ h6 {
     }
 
     .projekter {
-        grid-column: 2/8;
+        grid-column: 2/7;
     }
 
     .cocoon_titel {
-        grid-column: 6/10;
+        grid-column: 5/9;
         grid-row: 3/4
     }
 
     .cocoon_tekst {
-        grid-column: 7/12;
+        grid-column: 6/12;
         grid-row: 4/5
     }
 
     .cocoon_billede {
+        grid-column: 2/6;
+        grid-row: 3/6
+    }
+
+    .cocoon_billede img {
+        max-width: 400px;
+    }
+
+    .tembo_titel {
+        grid-column: 3/8;
+        grid-row: 6/7;
+        justify-self: end;
+    }
+
+    .tembo_tekst {
+        grid-column: 3/7;
+        grid-row: 7/8
+    }
+
+    .tembo_billede {
+        grid-column: 7/12;
+        grid-row: 5/8;
+    }
+
+
+    .tembo_billede img {
+        max-width: 500px;
+    }
+
+
+    .hook_titel {
+        grid-column: 7/11;
+        grid-row: 8/9;
+        align-self: end;
+    }
+
+    .hook_tekst {
+        grid-column: 8/12;
+        grid-row: 9/10;
+    }
+
+    .hook_billede {
         grid-column: 2/8;
-        grid-row: 3/5
+        grid-row: 8/11;
+    }
+
+    .hook_billede img {
+        max-width: 600px;
+    }
+
+    .pendant_titel {
+        grid-column: 4/8;
+        grid-row: 11/12;
+
+    }
+
+    .pendant_tekst {
+        grid-column: 3/7;
+        grid-row: 12/13;
+    }
+
+    .pendant_billede {
+        grid-column: 8/12;
+        grid-row: 10/13;
+    }
+
+    .pendant_billede img {
+        max-width: 400px;
     }
 }
 
@@ -102,7 +205,6 @@ h6 {
     }
 
     .splashvideo {
-        /*        margin: 0em 0em 0em 7em;*/
         grid-column: 2/14
     }
 
@@ -111,9 +213,5 @@ h6 {
         grid-column: 2/8
     }
 
-    /*
-    .cocoon {
-        grid-column: 2/3;
-    }
-*/
+
 }
