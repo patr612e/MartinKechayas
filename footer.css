@@ -18,7 +18,7 @@ footer {
 	margin: 1em;
 }
 
-li {
+div > ul li {
 	list-style-type: none;
 	color: black;
 	font-size: 0.8em;
@@ -33,7 +33,7 @@ li {
 	letter-spacing: 0.1em;
 }
 
-a {
+.kontakt_footer a, .presse_footer a, .followus_footer a, .projekter_footer a {
 
 	text-decoration: none;
 	color: black;
