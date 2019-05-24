@@ -1,0 +1,39 @@
+/*Skrives ovenover billedet*/
+
+<img src="trekant.svg"class="trekant" >
+
+/*Mobilefirst*/
+.trekant {
+	display: none;
+}
+
+
+/*HUSK DET ER MAX-WIDTH*/
+
+@media only screen and (max-width: 1000px) {
+	.trekant {
+		display: none;
+	}
+}
+
+
+@media screen and (min-width: 1000px) {
+	.trekant {
+		display: inherit;
+		position: absolute;
+		margin-top: -15em;
+		margin-left: 42em;
+		z-index: 2;
+		width: 70vw;
+	}
+
+}
+
+@media screen and (min-width: 1200px) {
+	.trekant {
+		display: inherit;
+		position: absolute;
+		margin-top: -15em;
+		margin-left: 52em;
+	}
+}
