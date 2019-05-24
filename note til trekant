@@ -1,8 +1,16 @@
-/*Skrives ovenover billedet*/
+HTML:
 
 <img src="trekant.svg"class="trekant" >
 
+
+____________________________
+
+
+CSS:
+
+
 /*Mobilefirst*/
+
 .trekant {
 	display: none;
 }
