@@ -8,8 +8,7 @@ footer {
 }
 
 .logo_footer {
-	margin-left: 2.5em;
-	margin-top: 5em;
+	width: 5em;
 }
 
 li {
@@ -132,7 +131,6 @@ input[type=submit] {
 
 	.logo_footer {
 		grid-column: 2/3;
-		margin-left: 2.5em;
 	}
 
 	.projekter_footer {
