@@ -456,7 +456,7 @@ input[type=submit] {
 
 
 	.grid-container {
-		grid-template-columns: 13em 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+		grid-template-columns: 13em 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	}
 
 	.splashvideo {
@@ -560,6 +560,7 @@ input[type=submit] {
 }
 
 @media screen and (min-width: 1000px) {
+
 
 	.logo_desktop {
 		top: 3em;

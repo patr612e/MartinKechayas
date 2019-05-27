@@ -14,6 +14,9 @@ h6 {
 }
 
 
+img {
+	width: 100%
+}
 
 /*********************** burger menu start *******************************/
 
@@ -197,45 +200,51 @@ nav {
 	display: grid;
 	grid-gap: 1px;
 	grid-template-columns: 1fr;
+	grid-template-rows: 10em 5em 5em;
+	background-color: #E1D9CF;
 }
 
+
+
+.splash {
+	display: none;
+}
+
+.produkt_titel {
+	z-index: 3;
+	grid-row: 2/3;
+	margin: 2em;
+}
+
+.produkt_madeof {
+	grid-row: 3/4;
+	margin: 2em;
+
+}
+
+.produkt_baggrund {
+	background-color: #E1D9CF;
+	grid-row: 4/10;
+	margin: 2em;
+}
 
 /*********************** Main slut *******************************/
 
 
-@media screen and (min-width: 700px) {
-
-	.grid-container {
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-		grid-template-rows: auto auto 75px auto 75px 75px auto 100px auto 75px 75px;
-	}
-
-	.splash {
-		grid-column: 1/13;
-		padding: 0;
-		margin: 0;
-		overflow: hidden;
-	}
-
-
-
-
-
-}
-
-
-
-
+@media screen and (min-width: 700px) {}
 
 @media screen and (min-width: 1000px) {
 
 
 	.grid-container {
-		grid-template-columns: 13em 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+		grid-template-columns: 13em 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: 12em 12em 10em 10em 10em;
+		background-color: transparent;
 	}
 
 	.splash {
 		grid-column: 2/13;
+		grid-row: 1/1;
 	}
 
 
@@ -276,13 +285,43 @@ nav {
 		position: fixed;
 	}
 
-}
+	.produkt_baggrund {
+		grid-column: 3/10;
+		grid-row: 1/7;
+		z-index: 2;
+		margin: 0;
+	}
 
+	.produkt_titel {
+		grid-column: 8/11;
+		grid-row: 2/3;
+		font-size: 3em;
+		margin-top: 4em;
+	}
 
+	.produkt_titel h1 {
+		position: fixed;
+	}
 
-@media screen and (min-width: 700px) {}
+	.produkt_madeof {
+		grid-column: 10/11;
+		grid-row: 1/2;
+		z-index: 3;
+		margin: 2em;
+	}
 
-@media screen and (min-width: 1000px) {
+	.produkt_madeof p {
+		position: fixed;
+	}
+
+	.splash {
+		display: inherit;
+	}
+
+	#splashbillede {
+		position: fixed;
+	}
+
 
 	.logo_desktop {
 		top: 3em;
