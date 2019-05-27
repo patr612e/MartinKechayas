@@ -21,7 +21,11 @@ h6 {
 
 
 .hidden {
-	transform: scale(0);
+	display: none;
+}
+
+.show {
+	display: inline;
 }
 
 .overflow {
