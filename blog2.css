@@ -338,11 +338,12 @@ section:last-child {
 
 .blog-text {
     padding: 0.5em;
-    background-color: antiquewhite;
     max-width: 600px;
 }
 
-.blog-billede {}
+.blog-billede {
+    background-color: azure;
+}
 
 .titel {
     text-transform: uppercase;
@@ -375,26 +376,27 @@ section:last-child {
 
     section {
         grid-template-columns: 1fr 1fr;
+        grid-template-areas: "one two";
     }
 
 
 
-    section .blog-billede:nth-child(odd) {
-        grid-column: 1/2;
+    section:nth-child(odd) .blog-billede {
+        grid-area: one;
     }
 
-    section .blog-billede:nth-child(even) {
-        grid-column: 2/3;
+    section:nth-child(even) .blog-billede {
+        grid-area: two;
     }
 
 
 
-    section .blog-text:nth-child(odd) {
-        grid-column: 2/3;
+    section:nth-child(odd) .blog-text {
+        grid-area: two;
     }
 
-    section .blog-text:nth-child(even) {
-        grid-column: 1/2;
+    section:nth-child(even) .blog-text {
+        grid-area: one;
     }
 
 
