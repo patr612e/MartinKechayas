@@ -70,6 +70,37 @@
 			<img src="produktforside.jpg" id="splashbillede">
 		</div>
 		<div class="produkt_baggrund">
+			<!--Diasshow start-->
+			<div class="slideshow-container">
+
+				<div class="mySlides fade">
+					<img src="cocoon1.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides fade">
+					<img src="cocoon2.jpg" style="width:100%">
+
+				</div>
+
+				<div class="mySlides fade">
+					<img src="cocoon3.jpg" style="width:100%">
+				</div>
+
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			</div>
+			<br>
+
+
+			<div style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+			</div>
+
+			<!--Diasshow slut-->
+
 			<div id="tekst1">Our mission has been to create a new icon. A timeless lounge chair for private and public spaces. Cocoon Lounge fit just as well in homes as in the hotel lobby or restaurant lounge.</div>
 
 			<div class="hook_billede">
@@ -93,6 +124,7 @@
 			<h1>Cocoon Lounge</h1>
 		</div>
 
+		<!--
 		<div class="produkt_madeof">
 			<p>Cocoon Lounge is designed <br> by
 				Danish design duo <br> <br>
@@ -102,6 +134,7 @@
 				MARTIN KECHAYAS (Designer b.1969).
 			</p>
 		</div>
+-->
 
 
 
@@ -146,6 +179,37 @@
 				document.querySelector(".burgermenu").classList.add("background");
 
 			}
+		}
+
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+			showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("dot");
+			if (n > slides.length) {
+				slideIndex = 1
+			}
+			if (n < 1) {
+				slideIndex = slides.length
+			}
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex - 1].style.display = "block";
+			dots[slideIndex - 1].className += " active";
 		}
 	</script>
 </body>
