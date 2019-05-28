@@ -42,7 +42,7 @@
                     klon.querySelector(".titel").innerHTML = indlæg.title.rendered;
                     klon.querySelector(".paragraph").innerHTML = indlæg.content.rendered;
                     console.log(indlæg);
-                    klon.querySelector(".blog-billede").src = indlæg.billede.guid;
+                    klon.querySelector(".blog-billede img").src = indlæg.billede.guid;
 
 
                     dest.appendChild(klon);
