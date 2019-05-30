@@ -313,7 +313,7 @@ input[type=submit] {
 
 img {
     width: 100%;
-    max-width: 600px;
+    max-width: 500px;
     justify-self: center;
     text-align: center;
     align-self: center;
@@ -323,7 +323,7 @@ img {
 section {
     display: grid;
     grid-template-columns: 1fr;
-    margin: 0.5em;
+    margin: 5em 0 5em 0;
 }
 
 section:first-child {
@@ -337,16 +337,15 @@ section:last-child {
 
 
 .blog-text {
-    padding: 0.5em;
+    padding: 0 1em 0 1em;
     max-width: 600px;
 }
 
-.blog-billede {
-    background-color: azure;
-}
+
 
 .titel {
     text-transform: uppercase;
+    font-size: 2em;
 }
 
 .dato {
@@ -358,6 +357,15 @@ section:last-child {
     line-height: 1.5em;
 }
 
+
+
+@media screen and (max-width: 700px) {
+
+    img {
+        width: 100%;
+        padding: 1em;
+    }
+}
 
 
 
@@ -383,6 +391,7 @@ section:last-child {
 
     section:nth-child(odd) .blog-billede {
         grid-area: one;
+        justify-self: right;
     }
 
     section:nth-child(even) .blog-billede {
@@ -397,7 +406,14 @@ section:last-child {
 
     section:nth-child(even) .blog-text {
         grid-area: one;
+
     }
+
+    section:nth-child(even) .blog-text .tekst {
+        text-align: right;
+
+    }
+
 
 
 
@@ -421,6 +437,14 @@ section:last-child {
         .blogindlaeg {
             grid-column: 2/3;
 
+        }
+
+        .paragraph {
+            line-height: 2em;
+        }
+
+        section:first-child {
+            margin-top: 5em;
         }
 
 
