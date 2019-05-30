@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: europa, sans-serif;
 }
 
 
@@ -81,6 +82,11 @@ h6 {
 
 .burgermenu-punkter {
     margin-right: 2em;
+}
+
+.burgermenu-punkter a {
+    color: black;
+    text-decoration: none;
 }
 
 .some_burger {
@@ -215,6 +221,7 @@ footer {
 .logo_footer {
     width: 8em;
     margin: 1em;
+    margin-top: 3em;
 }
 
 footer div > ul li {
@@ -309,6 +316,10 @@ input[type=submit] {
     grid-template-columns: 1fr;
 }
 
+.blog-billede {
+    padding: 0.5em;
+}
+
 
 
 img {
@@ -387,6 +398,10 @@ section:last-child {
         grid-template-areas: "one two";
     }
 
+    .blog-text {
+        align-self: center;
+    }
+
 
 
     section:nth-child(odd) .blog-billede {
@@ -406,6 +421,7 @@ section:last-child {
 
     section:nth-child(even) .blog-text {
         grid-area: one;
+        text-align: right;
 
     }
 
@@ -494,22 +510,24 @@ section:last-child {
         font-family: europa, sans-serif;
         font-weight: 100;
         font-style: normal;
-        width: 100%;
 
     }
 
     .logo_footer {
         width: 8em;
         margin: 1em;
+        margin-top: 3em;
     }
 
 
-    div > ul li {
+
+    footer div > ul li {
         list-style-type: none;
         color: black;
         font-size: 0.8em;
         line-height: 1.4em;
     }
+
 
 
     .footer-titel {
@@ -574,12 +592,12 @@ section:last-child {
 
         footer {
             grid-template-columns: 10vw 1fr 1fr 10vw;
-
+            grid-gap: 0;
         }
 
         .logo_footer {
             grid-column: 2/3;
-            margin-bottom: 3em;
+            margin-bottom: 2em;
         }
 
         .projekter_footer {
@@ -593,7 +611,7 @@ section:last-child {
 
         .nyhedsbrev_footer {
             grid-column: 2/4;
-            margin-top: 2em;
+            margin-top: 0em;
         }
 
         .copyright_footer {
@@ -619,7 +637,13 @@ section:last-child {
 
     @media screen and (min-width: 1000px) {
 
-
+        .trekant {
+            display: inherit;
+            position: absolute;
+            left: 75vw;
+            z-index: 2;
+            width: 25vw;
+        }
 
         footer {
             grid-column: 2/3;
@@ -633,16 +657,16 @@ section:last-child {
         .projekter_footer {
 
             grid-column: 2/3;
-            margin-top: 8em;
+            margin-top: 2em;
         }
 
         .kontakt_footer {
-            margin-top: 8em;
+            margin-top: 2em;
         }
 
         .presse_footer {
             grid-column: 4/5;
-            margin-top: 8em;
+            margin-top: 2em;
             margin-left: 3em;
 
         }
@@ -663,7 +687,7 @@ section:last-child {
         }
 
         .followus_footer {
-            margin-top: 8em;
+            margin-top: 2em;
             margin-left: 5em;
         }
 
@@ -672,6 +696,7 @@ section:last-child {
         }
 
     }
+
 
     @media screen and (min-width: 1200px) {
 
