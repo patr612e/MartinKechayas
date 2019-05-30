@@ -346,7 +346,27 @@ label {
 }
 
 .messe {
-	font-weight: 700;
+	line-height: 0.2em;
+	margin-right: 0.5em;
+}
+
+.messe h4 {
+	margin-top: 1em;
+	font-family: europa, sans-serif;
+	font-size: 1em;
+	color: rgba(170, 127, 58, 0.91);
+}
+
+#blog {
+	text-transform: uppercase;
+	color: #ffffff;
+	font-size: 1.6em;
+}
+
+#dato {
+	text-transform: uppercase;
+	color: #ffffff;
+	font-size: 1em;
 }
 
 .cocoon_titel {
@@ -502,13 +522,13 @@ h2 {
 	}
 
 	.pendant_titel {
-		grid-column: 4/8;
+		grid-column: 6/10;
 		grid-row: 11/12;
 
 	}
 
 	.pendant_tekst {
-		grid-column: 3/7;
+		grid-column: 4/8;
 		grid-row: 12/13;
 	}
 
@@ -814,9 +834,9 @@ input[type=submit] {
 
 
 .btn {
-	border: 2px solid black;
+	border: 1.5px solid #2f2f2f;
 	background-color: white;
-	color: black;
+	color: #2f2f2f;
 	padding: 0.5em;
 	font-size: 0.8em;
 	cursor: pointer;
@@ -824,12 +844,12 @@ input[type=submit] {
 }
 
 .info {
-	border-color: #2e327c;
-	color: #2e327c
+	border-color: #2f2f2f;
+	color: #2f2f2f;
 }
 
 .info:hover {
-	background: #2E327C;
+	background: #2f2f2f;
 	color: white;
 }
 
