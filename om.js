@@ -34,19 +34,40 @@
      }
  }
 
- document.addEventListener('scroll', timeline);
 
- function timeline() {
-     // 	var threshold_position = window.scrollY + window.innerHeight * 2 / 3;
-     var threshold_position = window.scrollY + window.innerHeight * 2 / 3;
-     //compare scrolltop with scrolltop on each timeline event
-     var timeline_events = document.querySelectorAll('.timeline li');
-     for (i in timeline_events) {
-         if (timeline_events[i].offsetTop < threshold_position) {
-             timeline_events[i].classList.add('visible');
-         } else {
-             timeline_events[i].classList.remove('visible');
-         }
-     }
+
+
+
+
+ "use strict"
+
+ let minHistorie = [];
+
+
+
+
+ async function hentJson1() {
+
+     console.log("hent json 1");
+
+     let url = "http://patrickpost.dk/kea/kechayas_wp/wordpress/wp-json/wp/v2/generelt/24";
+
+     let myJson = await fetch(url);
+
+     minHistorie = await myJson.json();
+
+     visMinHistorie();
  }
- timeline();
+
+
+ function visMinHistorie() {
+
+     console.log("vis min historie");
+
+     document.querySelector(".tekst p").innerHTML = minHistorie.content.rendered;
+     document.querySelector(".title h2").innerHTML = minHistorie.title.rendered;
+     document.querySelector(".kechayas img").src = minHistorie.billede.guid;
+
+ }
+
+ hentJson1();

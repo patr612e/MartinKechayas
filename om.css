@@ -63,6 +63,11 @@
     margin-right: 2em;
 }
 
+.burgermenu-punkter a {
+    text-decoration: none;
+    color: black;
+}
+
 .some_burger {
     margin-right: 2em;
     margin-top: 3em;
@@ -105,10 +110,12 @@ body {
 }
 
 
+/*
 .header-menu {
     margin-top: 8em;
 
 }
+*/
 
 .desktop_menu {
     padding: 0;
@@ -188,7 +195,7 @@ nav {
         padding: 1em;
         margin: 1em;
         position: fixed;
-        /*        margin-top: 20vh;*/
+        margin-top: 15vh;
         display: block;
     }
 
@@ -196,7 +203,7 @@ nav {
         padding: 0;
         margin: 0;
         position: fixed;
-        margin-top: 75vh;
+        margin-top: 90vh;
         margin-left: 1.5em;
         display: block;
 
@@ -255,6 +262,7 @@ nav {
     display: grid;
     grid-template-columns: 1fr;
     padding: 0.5em;
+    max-width: 350px;
 }
 
 .title {
@@ -268,19 +276,70 @@ nav {
 }
 
 .billede_kechayas {
-    max-width: 500px;
+    max-width: 400px;
 }
 
 .billede_kechayas img {
     width: 100%;
 }
 
+.ikoner {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.kurv {
+    width: 15px;
+    margin: 0;
+    position: absolute;
+    /*    left: 1.4em;*/
+    top: -1em;
+    z-index: 1;
+}
+
+.søgknap input[type=text] {
+    width: 80px;
+    box-sizing: border-box;
+    border: 2px solid white;
+    border-radius: 4px;
+    font-size: 12px;
+    background-color: white;
+    background-image: url('search.png');
+    background-size: 20%;
+    background-repeat: no-repeat;
+    transition: width 0.4s ease-in-out;
+    margin-left: 2em;
+    position: absolute;
+    top: -1.5em;
+}
+
+.søgknap input[type=text]:focus {
+    padding-left: 2em;
+    background-color: white;
+    z-index: 2;
+}
+
+
 
 @media screen and (max-width: 700px) {
     .kechayas {
         margin: 1em 2em 0 3em;
     }
+
+    .title h2 {
+        text-align: center;
+    }
+
+    .tekst {
+        padding: 2em;
+    }
+
+    .kechayas img {
+        text-align: center;
+    }
 }
+
 
 @media screen and (min-width: 700px) {
 
@@ -334,6 +393,7 @@ nav {
 
     .grid-container {
         grid-template-columns: 13em 2fr 1fr 4fr;
+        margin-top: 2em;
     }
 
 
@@ -657,16 +717,16 @@ input[type=submit] {
     .projekter_footer {
 
         grid-column: 2/3;
-        margin-top: 8em;
+        margin-top: 2em;
     }
 
     .kontakt_footer {
-        margin-top: 8em;
+        margin-top: 2em;
     }
 
     .presse_footer {
         grid-column: 4/5;
-        margin-top: 8em;
+        margin-top: 2em;
         margin-left: 3em;
 
     }
@@ -687,7 +747,7 @@ input[type=submit] {
     }
 
     .followus_footer {
-        margin-top: 8em;
+        margin-top: 2em;
         margin-left: 5em;
     }
 
