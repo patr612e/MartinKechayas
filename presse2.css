@@ -1,3 +1,28 @@
+body {
+    margin: 0;
+    font-family: europa, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+
+/*********************** burger menu start *******************************/
+
+
 .hidden {
     display: none;
 }
@@ -16,7 +41,6 @@
 }
 
 #menuknap {
-
     display: inline-block;
     position: relative;
     right: 1em;
@@ -26,7 +50,7 @@
     z-index: 2;
     font-family: arial;
     cursor: pointer;
-    top: -6em;
+
 
 }
 
@@ -38,7 +62,7 @@
 }
 
 #menu {
-
+    /*    display: grid;*/
     grid-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr 20px;
     grid-template-rows: 1fr 180px;
@@ -63,10 +87,16 @@
     margin-right: 2em;
 }
 
+.burgermenu-punkter a {
+    text-decoration: none;
+    color: black;
+}
+
 .some_burger {
     margin-right: 2em;
     margin-top: 3em;
 }
+
 
 .some_burger a {
     font-size: 1.5em;
@@ -78,6 +108,7 @@
     font-weight: bolder;
     font-size: 1.5em;
 }
+
 
 #menu a:hover {
     color: #4d4c4c;
@@ -99,9 +130,12 @@
 }
 
 
+/*********************** burger menu slut *******************************/
+
+
+
 body {
     margin: 0;
-    font-family: europa, sans-serif;
 }
 
 
@@ -116,6 +150,10 @@ body {
 
 }
 
+.desktop_menu ul {
+    margin-top: 2em;
+}
+
 .desktop_menu li {
     list-style-type: none;
     font-family: europa, sans-serif;
@@ -125,24 +163,20 @@ body {
     line-height: 2em;
     letter-spacing: 0.1em;
     font-size: 1em;
-
-
 }
 
 .desktop_menu a {
     font-size: 0.6em;
 }
 
+.some_desktop {
+    display: none;
+}
+
 .desktop_menu a:hover {
     color: #535353;
 }
 
-.some_desktop {
-    font-size: 1em;
-    grid-row: 5/6;
-    margin-left: 1em;
-    display: none;
-}
 
 .fa {
     padding: 0.1em;
@@ -155,21 +189,138 @@ body {
     width: 125px;
 }
 
+.ikoner {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.kurv {
+    width: 15px;
+    margin: 0;
+    position: absolute;
+    left: 2.4em;
+    z-index: 1;
+}
+
+.søgknap input[type=text] {
+    width: 80px;
+    box-sizing: border-box;
+    border: 2px solid white;
+    border-radius: 4px;
+    font-size: 12px;
+    background-color: white;
+    background-image: url('search.png');
+    background-size: 20%;
+    background-repeat: no-repeat;
+    transition: width 0.4s ease-in-out;
+    margin-left: 5em;
+    position: absolute;
+    top: -2px;
+}
+
+.søgknap input[type=text]:focus {
+    padding-left: 2em;
+    background-color: white;
+    z-index: 2;
+}
+
+/* ---------MENU---------- */
+
 
 
 nav {
-
     text-align: right;
     height: auto;
     min-height: 4em;
     line-height: 4em;
     width: 100%;
 
+
     position: absolute;
     z-index: 2;
 }
 
+
+
+
+
+
+.header-menu {
+    display: none;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 1000px) {
+
+    nav {
+        width: 10em;
+        height: 100vh;
+        position: fixed;
+    }
+
+}
+
+/* -------MENU-------- */
+
+
+.grid-container {
+
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.billeder-container {
+
+    min-height: 50vh;
+}
+
+.row {
+    margin-top: 8em;
+}
+
+
+.img-container img:hover {
+    transform: scale(0.98);
+    filter: opacity(0.2);
+}
+
+
+
+
+
+@media screen and (min-width: 700px) {
+
+    .grid-container {
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+
+
+
 @media screen and (min-width: 1000px) {
+
+    .grid-container {
+        grid-template-columns: 13em 1fr;
+    }
+
+    .billeder-container {
+        grid-column: 2/3;
+    }
+
+    .row {
+        margin-top: 0em;
+    }
+
 
 
     .header-menu {
@@ -181,14 +332,16 @@ nav {
 
 
     .logo_desktop {
+        margin: 1em;
         position: fixed;
     }
 
     .desktop_menu {
-        padding: 1em;
-        margin: 1em;
+        padding: 0;
+        margin: 0;
         position: fixed;
-        /*        margin-top: 20vh;*/
+        margin-top: 20vh;
+        margin-left: -0.2em;
         display: block;
     }
 
@@ -196,8 +349,8 @@ nav {
         padding: 0;
         margin: 0;
         position: fixed;
-        margin-top: 75vh;
-        margin-left: 1.5em;
+        margin-top: 95vh;
+        margin-left: 2em;
         display: block;
 
     }
@@ -205,270 +358,89 @@ nav {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-.grid-container {
-
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-top: 10em;
-}
-
-
-.timeline img {
-    max-width: 200px;
-}
-
-.timeline_grafik {
-    margin: 0 3em 0 3em;
-}
-
-.title {
-    text-transform: uppercase;
-    font-size: 2em;
-    z-index: 1;
-    padding: 0.5em;
-}
-
-.tekst {
-    padding: 1em;
-}
-
-.kechayas {
-    min-width: 350px;
-    max-width: 500px;
-
-}
-
-.kechayas img {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 0.5em;
-}
-
-.title {
-    text-transform: uppercase;
-    font-size: 2em;
-    z-index: 1;
-}
-
-.tekst {
-    padding: 0.5em;
-}
-
-.billede_kechayas {
-    max-width: 500px;
-}
-
-.billede_kechayas img {
-    width: 100%;
-}
-
-
-@media screen and (max-width: 700px) {
-    .kechayas {
-        margin: 1em 2em 0 3em;
-    }
-}
-
-@media screen and (min-width: 700px) {
-
-
-    .grid-container {
-        grid-template-columns: 2fr 1fr 4fr;
-        grid-template-rows: 7em 20em auto;
-        margin-top: 7em;
-
-    }
-
-    .container {
-        grid-column: 1/4;
-    }
-
-    .min_historie {
-        grid-column: 1/4;
-    }
-
-
-
-    .title {
-        grid-column: 2/3;
-        grid-row: 1/2;
-        white-space: nowrap;
-        align-self: end;
-    }
-
-
-    .tekst {
-        grid-column: 1/3;
-        grid-row: 2/3;
-        text-align: right;
-        line-height: 1.5em;
-    }
-
-
-    .kechayas {
-        grid-column: 3/4;
-        grid-row: 1/2;
-    }
-
-    #menuknap {
-        top: -4em;
-    }
-
-}
-
-
-@media screen and (min-width: 1000px) {
-
-    .grid-container {
-        grid-template-columns: 13em 2fr 1fr 4fr;
-    }
-
-
-    .min_historie {
-        grid-column: 2/5;
-    }
-
-    .container {
-        grid-column: 2/5;
-    }
-
-
-
-    .title {
-        grid-column: 3/5;
-        line-height: 1.6em;
-        text-transform: uppercase;
-    }
-
-    .tekst {
-        grid-column: 2/4;
-        line-height: 2em;
-    }
-
-
-    .kechayas {
-        grid-column: 4/5;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-h3 {
-    font-family: sans-serif;
-}
-
-.container {
-    max-width: 900px;
-    margin: 50px auto;
-}
-
-.container img {
-    width: 100%;
-}
-
-.timeline {
-
-    position: relative;
+.row {
     display: flex;
-    flex-direction: column;
-    list-style: none;
-    padding-top: 20px;
-    padding-bottom: 20px;
-
+    flex-wrap: wrap;
+    padding: 0 4px;
 }
 
-/* the timeline's center vertical line */
-.timeline:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    width: 1px;
-    background-color: #ccc;
+/* Create four equal columns that sits next to each other */
+
+.column {
+    flex: 20%;
+    max-width: 25%;
+    padding: 0 4px;
 }
 
-.timeline li {
-    border-top: 1px solid #ccc;
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 45%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+
+
+.img-container {
     position: relative;
-    width: 50%;
-    min-height: 100px;
-    margin-bottom: 20px;
-    padding: 20px 40px;
-    text-align: right;
-    transition: .3s;
-    opacity: 0;
-    transform: translateX(-10%);
+    /*    width: 50%;*/
 }
 
-/* the rounded mark on each timeline item */
-.timeline li:before {
-    content: "";
-    width: 10px;
-    height: 10px;
+/* Make the image responsive */
+.img-container img {
+    width: 100%;
+    height: auto;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.img-container .btn {
     position: absolute;
-    top: 0;
-    right: 0;
-    background: #ccc;
-    border-radius: 50%;
-    box-sizing: border-box;
-    transform: translate(50%, -50%);
-}
-
-.timeline h3 {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-.timeline p {
-    font-size: 1em;
-    line-height: 28px;
-}
-
-.timeline li:nth-child(2n) {
-    align-self: flex-end;
-    text-align: left;
-    transform: translateX(10%);
-}
-
-.timeline li:nth-child(2n):before {
-    left: 0;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #2e327c;
+    color: white;
+    font-size: 0.7em;
+    padding: 8px 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    display: none;
 }
 
-.timeline li.visible {
-    opacity: 1;
-    transform: translateX(0);
+.img-container img:hover + .btn,
+.btn:hover {
+    display: inline-block;
 }
 
-
-
+/*
+.btn:hover + img,
+img:hover {
+    filter: opacity(0.2);
+}
+*/
 
 
 
@@ -582,10 +554,9 @@ input[type=submit] {
 @media screen and (min-width: 700px) {
 
     footer {
-        grid-column: 1/14;
-        grid-row: 13/14;
         grid-template-columns: 10vw 1fr 1fr 10vw;
-        grid-gap: 0;
+        margin-top: 5em;
+
     }
 
     .logo_footer {
@@ -633,16 +604,9 @@ input[type=submit] {
 
 @media screen and (min-width: 1000px) {
 
-    .trekant {
-
-        position: absolute;
-        left: 75vw;
-        z-index: 2;
-        width: 70vw;
-    }
 
     footer {
-        grid-column: 2/14;
+        grid-column: 2/3;
         grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
     }
 
