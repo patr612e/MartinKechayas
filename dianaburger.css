@@ -298,10 +298,6 @@ label {
 /* -------MENU-------- */
 
 
-.grid-container > div {
-	padding: 0.5em;
-}
-
 .projekter,
 .messe,
 .cocoon_titel,
@@ -322,7 +318,6 @@ label {
 
 
 .grid-container {
-
 	display: grid;
 	grid-gap: 1px;
 	grid-template-columns: 1fr;
@@ -338,50 +333,68 @@ label {
 	width: 100%;
 }
 
+.projekter_tekst {
+	font-weight: 100;
+	font-size: 1em;
+}
+
+.projekter_tekst h1 {
+	font-family: europa, sans-serif;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 3.2em;
+}
+
 .messe {
 	font-weight: 700;
 }
 
 .cocoon_titel {
-
-	font-size: 1.7em;
+	font-size: 2em;
 	white-space: nowrap;
 	z-index: 1;
 }
 
 .cocoon_tekst {
 	z-index: 1;
-	font-weight: 600;
+	font-weight: 100;
+	font-size: 0.9em;
 }
 
 .tembo_titel {
-	font-size: 1.7em;
+	font-size: 2em;
 	white-space: nowrap;
 	z-index: 1;
 }
 
 .tembo_tekst {
 	z-index: 1;
+	font-weight: 100;
+	font-size: 0.9em;
 }
 
 .hook_titel {
-	font-size: 1.7em;
+	font-size: 2em;
 	white-space: nowrap;
 	z-index: 1;
 }
 
 .hook_tekst {
 	z-index: 1;
+	font-weight: 100;
+	font-size: 0.9em;
 }
 
 .pendant_titel {
-	font-size: 1.7em;
+	font-size: 2em;
 	white-space: nowrap;
 	z-index: 1;
 }
 
 .pendant_tekst {
 	z-index: 1;
+	font-weight: 100;
+	font-size: 0.9em;
 }
 
 .click:hover {
@@ -391,6 +404,10 @@ label {
 
 }
 
+h2 {
+	font-weight: 500;
+	font-family: europa, sans-serif;
+}
 
 
 
