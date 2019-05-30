@@ -141,6 +141,10 @@ body {
 
 }
 
+.desktop_menu ul {
+	margin-top: 2em;
+}
+
 .desktop_menu li {
 	list-style-type: none;
 	font-family: europa, sans-serif;
@@ -150,8 +154,6 @@ body {
 	line-height: 2em;
 	letter-spacing: 0.1em;
 	font-size: 1em;
-
-
 }
 
 .desktop_menu a {
@@ -162,12 +164,6 @@ body {
 	color: #535353;
 }
 
-.some_desktop {
-	font-size: 1em;
-	grid-row: 5/6;
-	margin-left: 0em;
-	display: none;
-}
 
 .fa {
 	padding: 0.1em;
@@ -180,13 +176,47 @@ body {
 	width: 125px;
 }
 
+.ikoner {
+	display: flex;
+	flex-direction: row;
+
+}
+
+.kurv {
+	width: 15px;
+	margin: 0;
+	position: absolute;
+	left: 2.4em;
+	z-index: 1;
+}
+
+.søgknap input[type=text] {
+	width: 80px;
+	box-sizing: border-box;
+	border: 2px solid white;
+	border-radius: 4px;
+	font-size: 12px;
+	background-color: white;
+	background-image: url('search.png');
+	background-size: 20%;
+	background-repeat: no-repeat;
+	transition: width 0.4s ease-in-out;
+	margin-left: 5em;
+	position: absolute;
+	top: -2px;
+}
+
+.søgknap input[type=text]:focus {
+	padding-left: 2em;
+	background-color: white;
+	z-index: 2;
+}
 
 /* ---------MENU---------- */
 
 
 
 nav {
-	border-bottom: 1px solid white;
 	text-align: right;
 	height: auto;
 	min-height: 4em;
@@ -482,6 +512,7 @@ label {
 
 
 	.logo_desktop {
+		margin: 1em;
 		position: fixed;
 	}
 
@@ -490,7 +521,7 @@ label {
 		margin: 0;
 		position: fixed;
 		margin-top: 20vh;
-		margin-left: -1em;
+		margin-left: -0.2em;
 		display: block;
 	}
 
@@ -499,7 +530,7 @@ label {
 		margin: 0;
 		position: fixed;
 		margin-top: 95vh;
-		margin-left: 3em;
+		margin-left: 2em;
 		display: block;
 
 	}

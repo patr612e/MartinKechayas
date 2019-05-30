@@ -22,7 +22,7 @@ img {
 
 
 .hidden {
-	transform: scale(0);
+	display: none;
 }
 
 .overflow {
@@ -126,6 +126,7 @@ a {
 
 
 
+
 .header-menu {
 	margin-top: 8em;
 
@@ -137,14 +138,19 @@ a {
 
 }
 
+.desktop_menu ul {
+	margin-top: 2em;
+}
+
 .desktop_menu li {
 	list-style-type: none;
 	font-family: europa, sans-serif;
-	font-weight: bolder;
+	font-weight: 600;
 	font-style: normal;
-	line-height: 1.5em;
-	font-size: 1.5em;
-
+	text-transform: uppercase;
+	line-height: 2em;
+	letter-spacing: 0.1em;
+	font-size: 1em;
 }
 
 .desktop_menu a {
@@ -155,11 +161,6 @@ a {
 	color: #535353;
 }
 
-.some_desktop {
-	font-size: 0.7em;
-	grid-row: 5/6;
-	display: none;
-}
 
 .fa {
 	padding: 0.1em;
@@ -167,14 +168,49 @@ a {
 
 .logo_desktop {
 	position: absolute;
-	left: 1.5em;
-	top: 1.5em;
+	left: 0.8em;
+	top: 1em;
 	width: 125px;
+}
+
+.ikoner {
+	display: flex;
+	flex-direction: row;
+
+}
+
+.kurv {
+	width: 15px;
+	margin: 0;
+	position: absolute;
+	left: 2.4em;
+	z-index: 1;
+}
+
+.søgknap input[type=text] {
+	width: 80px;
+	box-sizing: border-box;
+	border: 2px solid white;
+	border-radius: 4px;
+	font-size: 12px;
+	background-color: white;
+	background-image: url('search.png');
+	background-size: 20%;
+	background-repeat: no-repeat;
+	transition: width 0.4s ease-in-out;
+	margin-left: 5em;
+	position: absolute;
+	top: -2px;
+}
+
+.søgknap input[type=text]:focus {
+	padding-left: 2em;
+	background-color: white;
+	z-index: 2;
 }
 
 
 nav {
-	border-bottom: 1px solid white;
 	text-align: right;
 	height: auto;
 	min-height: 4em;
@@ -192,20 +228,114 @@ nav {
 
 
 /*********************** Main start *******************************/
+/*Dias start*/
+
+.mySlides {
+	display: none;
+}
+
+/* Slideshow container */
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: #BF9775;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #E4DED2;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+	background-color: #BF9775;
+}
+
+/* Fading animation
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+*/
+@-webkit-keyframes fade {
+	from {
+		opacity: .4
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: .4
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+	.prev,
+	.next,
+	.text {
+		font-size: 11px
+	}
+}
 
 
+/*Dias slut*/
 
 .grid-container {
 
 	display: grid;
 	grid-gap: 1px;
 	grid-template-columns: 1fr;
-	grid-template-rows: 7em 3em 5em 5em 5em;
+	grid-template-rows: 8em 0em 0em 15em;
 	background-color: #E1D9CF;
 	font-family: europa, sans-serif;
 }
 
 
+h1 {
+	font-weight: normal;
+}
 
 .splash {
 	display: none;
@@ -213,19 +343,57 @@ nav {
 
 .produkt_titel {
 	z-index: 3;
-	grid-row: 2/3;
-	margin: 2em;
+	grid-row: 1/2;
+	margin-left: 1em;
+	margin-top: 5em;
+	font-size: 1.5em;
 }
 
-.produkt_madeof {
-	grid-row: 3/4;
+.diasshow {
+	grid-row: 1/2;
+}
+
+.produkt_info {
+	grid-row: 4/5;
 	margin: 2em;
 
 }
+
+.produkt_købknap {
+	border: 1px solid black;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.produkt_farver {
+	display: flex;
+	flex-direction: row;
+	height: 50px;
+	width: 50px;
+	margin: 2em 2em 2em 0em;
+}
+
+.produkt_infoknap {
+	font-weight: 500;
+}
+
+.produkt_pris_detaljer {
+	display: flex;
+	flex-direction: row;
+}
+
+.produkt_pris {
+	justify-self: start;
+}
+
 
 .produkt_baggrund {
-	background-color: #E1D9CF;
-	grid-row: 5/10;
+	/*
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+*/
+	background-color: #2e327c;
+	grid-row: 6/10;
 	margin: 2em;
 }
 
@@ -258,6 +426,7 @@ nav {
 
 
 	.logo_desktop {
+		margin: 1em;
 		position: fixed;
 	}
 
@@ -266,7 +435,7 @@ nav {
 		margin: 0;
 		position: fixed;
 		margin-top: 20vh;
-		margin-left: -1em;
+		margin-left: -0.4em;
 		display: block;
 	}
 
@@ -277,6 +446,7 @@ nav {
 		margin-top: 95vh;
 		margin-left: 3em;
 		display: block;
+		font-size: 0.6em;
 
 	}
 
@@ -287,8 +457,10 @@ nav {
 	}
 
 	.produkt_baggrund {
+		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-		grid-column: 3/10;
+		grid-template-rows: 1fr auto auto auto auto auto auto auto auto auto auto 1fr;
+		grid-column: 3/9;
 		grid-row: 1/7;
 		z-index: 2;
 		margin: 0;
@@ -296,9 +468,9 @@ nav {
 
 	.produkt_titel {
 		grid-column: 8/11;
-		grid-row: 2/3;
+		grid-row: 1/2;
 		font-size: 3em;
-		margin-top: 4em;
+		margin-top: 1em;
 
 	}
 
@@ -306,15 +478,24 @@ nav {
 		position: fixed;
 	}
 
-	.produkt_madeof {
-		grid-column: 10/11;
-		grid-row: 1/2;
-		z-index: 3;
-		margin: 2em;
+	.produkt_farver img {
+		width: 40px;
 	}
 
-	.produkt_madeof p {
+	.produkt_info {
+		/*
+		grid-column: 10/13;
+		grid-row: 2/3;
+*/
 		position: fixed;
+		z-index: 3;
+		text-align: right;
+		left: 75vw;
+		top: 35vh;
+	}
+
+	.produkt_prisdeltajer {
+		margin-left: 4em;
 	}
 
 	.splash {
@@ -326,14 +507,70 @@ nav {
 	}
 
 
-	.logo_desktop {
-		top: 3em;
+
+	.diasshow {
+		grid-column: 1/6;
+		grid-row: 1/2;
 	}
 
 	#tekst1 {
 		margin: 2em;
 		margin-right: em;
+		grid-row: 2/3;
+		grid-column: 1/5;
 	}
+
+
+	#tekst2 {
+		grid-row: 3/4;
+		grid-column: 3/6;
+		margin: 2em;
+	}
+
+	.cocoon_billede1 {
+		grid-row: 4/5;
+		grid-column: 1/4;
+		margin: 2em;
+	}
+
+	#cocoon_billede2 {
+		grid-row: 4/5;
+		grid-column: 4/6;
+		margin-top: 14em;
+		margin-right: 2em;
+	}
+
+	.hook_billede {
+		grid-row: 6/7;
+		grid-column: 1/6;
+		margin-top: 2em
+	}
+
+	.produkt_baggrund h3 {
+		grid-row: 7/8;
+		grid-column: 1/4;
+		margin: 1em;
+		font-size: 3em;
+	}
+
+	#tekst3 {
+		grid-row: 8/9;
+		grid-column: 2/5;
+	}
+
+	.cocoon_billede3 {
+		grid-row: 10/11;
+		grid-column: 3/6;
+		margin: 2em;
+
+	}
+
+	#tekst4 {
+		grid-row: 11/12;
+		grid-column: 2/5;
+		margin: 0 2em 2em 2em;
+	}
+
 
 }
 
@@ -341,5 +578,16 @@ nav {
 	input[type=text] {
 		width: 250px;
 	}
+
+	.produkt_farver img {
+		width: 50px;
+	}
+
+
+	.produkt_prisdeltajer {
+		margin-left: 7em;
+	}
+
+
 
 }
