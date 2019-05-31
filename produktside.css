@@ -20,6 +20,8 @@ img {
 	width: 100%
 }
 
+
+
 /*********************** burger menu start *******************************/
 
 
@@ -38,7 +40,6 @@ img {
 
 .burgermenu {
 	position: fixed;
-	z-index: 4;
 }
 
 #menuknap {
@@ -67,28 +68,30 @@ img {
 	grid-template-columns: 1fr 1fr 1fr 20px;
 	grid-template-rows: 1fr 180px;
 	right: 1.5em;
-	padding-top: 5em;
+	padding-top: 4.5em;
 	list-style-type: none;
 	width: 100vw;
 	z-index: 1;
 	color: #efeded;
 	text-align: right;
 	height: 100%;
+	text-transform: uppercase;
 	line-height: 2.5em;
 	font-family: europa, sans-serif;
 	font-weight: 600;
 	font-style: normal;
+	letter-spacing: 0.1em;
 	height: 100vh;
 }
-
 
 .burgermenu-punkter {
 	margin-right: 2em;
 }
 
 .burgermenu-punkter a {
-	text-decoration: none;
 	color: black;
+	text-decoration: none;
+	font-size: 1.3em;
 }
 
 .some_burger {
@@ -96,9 +99,32 @@ img {
 	margin-top: 3em;
 }
 
-a {
+.some_desktop {
+	display: none;
+}
+
+nav {
+	text-align: right;
+	height: auto;
+	min-height: 4em;
+	line-height: 4em;
+	width: 100%;
+
+
+	position: absolute;
+	z-index: 2;
+}
+
+
+.some_burger a {
+	font-size: 1.2em;
+}
+
+.desktop_menu a {
 	color: black;
 	text-decoration: none;
+	font-weight: bolder;
+	font-size: 1.5em;
 }
 
 
@@ -110,9 +136,41 @@ a {
 	color: black;
 }
 
-.some_desktop {
+.ikoner_burger {
+	display: flex;
+	flex-direction: row;
 
-	display: none;
+}
+
+.kurv_burger {
+	width: 25px;
+	margin: 0;
+	position: absolute;
+	left: 1em;
+	z-index: 1;
+	top: 7.6em;
+}
+
+.søgknap_burger input[type=text] {
+	width: 122px;
+	box-sizing: border-box;
+	border: 2px solid #EAE9E1;
+	border-radius: 4px;
+	font-size: 12px;
+	background-color: #EAE9E1;
+	background-image: url('search.png');
+	background-size: 20%;
+	background-repeat: no-repeat;
+	transition: width 0.4s ease-in-out;
+	margin-left: 4.5em;
+	position: absolute;
+	top: 10em;
+}
+
+.søgknap_burger input[type=text]:focus {
+	padding-left: 2em;
+	background-color: #EAE9E1;
+	z-index: 2;
 }
 
 @media screen and (min-width: 1000px) {
@@ -124,7 +182,6 @@ a {
 
 
 /*********************** burger menu slut *******************************/
-
 
 /*********************** Header menu start *******************************/
 
@@ -384,8 +441,9 @@ h1 {
 
 .produkt_købknap:hover {
 	display: block;
-	background-color: black;
 	color: white;
+	background: #2E327C;
+	border: 1px solid #2E327C;
 }
 
 
