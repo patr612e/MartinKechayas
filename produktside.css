@@ -38,6 +38,7 @@ img {
 
 .burgermenu {
 	position: fixed;
+	z-index: 4;
 }
 
 #menuknap {
@@ -80,18 +81,19 @@ img {
 	height: 100vh;
 }
 
+
 .burgermenu-punkter {
 	margin-right: 2em;
+}
+
+.burgermenu-punkter a {
+	text-decoration: none;
+	color: black;
 }
 
 .some_burger {
 	margin-right: 2em;
 	margin-top: 3em;
-}
-
-
-.some_burger a {
-	font-size: 1.5em;
 }
 
 a {
@@ -344,7 +346,7 @@ h1 {
 }
 
 .produkt_titel {
-	z-index: 3;
+	z-index: 1;
 	grid-row: 1/2;
 	margin-left: 1em;
 	margin-top: 5em;
@@ -359,16 +361,31 @@ h1 {
 .produkt_info {
 	grid-row: 3/4;
 	margin: 2em;
+	z-index: 2;
 
 }
 
 .produkt_købknap {
-	border: 2px solid black;
 	text-align: center;
 	vertical-align: middle;
 	text-transform: uppercase;
-	font-weight: 600;
+	font-weight: 500;
 	display: block;
+	z-index: 2;
+	padding: 1.5em 10em 1.5em 10em;
+	color: black;
+	border: 1px solid black;
+	justify-self: right;
+	transition: .5s;
+	font-size: 0.5em;
+
+}
+
+
+.produkt_købknap:hover {
+	display: block;
+	background-color: black;
+	color: white;
 }
 
 
@@ -382,16 +399,91 @@ h1 {
 
 .produkt_infoknap {
 	font-weight: 500;
+	font-weight: 500;
 }
 
-.produkt_pris_detaljer {
-	display: flex;
-	flex-direction: row;
+#førpris {
+	font-size: 1em;
 }
 
 .produkt_pris {
 	justify-self: start;
+	line-height: 0.2em;
 }
+
+
+
+.toggle {
+	display: none;
+}
+
+.option {
+	position: relative;
+	margin-bottom: 2em;
+	width: 250px;
+}
+
+.title,
+.content {
+	backface-visibility: hidden;
+	transform: translateZ(0);
+	transition: all 0.2s;
+}
+
+.title {
+	background: #fff;
+	padding: 1em;
+	display: block;
+	color: #7A7572;
+	text-transform: uppercase;
+	font-size: 0.6em;
+	border: 1px solid #7A7572;
+}
+
+.title:after,
+.title:before {
+	content: '';
+	position: absolute;
+	right: 1.25em;
+	top: 1.25em;
+	width: 2px;
+	height: 0.75em;
+	background-color: #7A7572;
+	transition: all 0.2s;
+}
+
+.title:after {
+	transform: rotate(90deg);
+}
+
+.content {
+	max-height: 0;
+	overflow: hidden;
+	background-color: #fff;
+	color: #7A7572;
+	font-size: 0.7em;
+}
+
+.content p {
+	margin: 0;
+	padding: 0.5em 1em 1em;
+	line-height: 1.5;
+	font-weight: 100;
+}
+
+.toggle:checked + .title,
+.toggle:checked + .title + .content {
+	box-shadow: 3px 3px 6px #ddd, -3px 3px 6px #ddd;
+}
+
+.toggle:checked + .title + .content {
+	max-height: 500px;
+}
+
+.toggle:checked + .title:before {
+	transform: rotate(90deg) !important;
+}
+
 
 #tekst1 {
 	grid-row: 4/5;
@@ -553,9 +645,6 @@ input[type=submit] {
 		display: block;
 	}
 
-	#menuknap {
-		margin-top: -10em;
-	}
 
 	footer {
 		grid-column: 1/14;
@@ -655,7 +744,6 @@ input[type=submit] {
 	}
 
 	.produkt_titel {
-		z-index: 3;
 		grid-row: 1/2;
 		grid-column: 9/15;
 		margin-left: 1em;
@@ -674,8 +762,8 @@ input[type=submit] {
 		grid-column: 10/14;
 		margin: 2em;
 		margin-top: 18em;
-		text-align: right;
-
+		text-align: left;
+		z-index: 2;
 	}
 
 	.produkt_pris {
@@ -706,13 +794,14 @@ input[type=submit] {
 		grid-column: 2/9;
 		grid-row: 4/5;
 		margin: 2em 0 0 0;
+		line-height: 1.5em;
 	}
 
 	#tekst2 {
 		grid-column: 2/8;
 		margin: 1em 0em 0em 0em;
 		grid-row: 5/6;
-		line-height: 2em;
+		line-height: 1.5em;
 	}
 
 	.cocoon_billede1 {
@@ -904,7 +993,6 @@ input[type=submit] {
 	}
 
 	.produkt_titel {
-		z-index: 3;
 		grid-row: 1/2;
 		grid-column: 9/15;
 		margin-left: 1em;
@@ -923,7 +1011,7 @@ input[type=submit] {
 		grid-column: 10/14;
 		margin: 2em;
 		margin-top: 20em;
-		text-align: right;
+		z-index: 2;
 
 	}
 
@@ -942,10 +1030,6 @@ input[type=submit] {
 		font-weight: 500;
 	}
 
-	.produkt_pris_detaljer {
-		display: flex;
-		flex-direction: row;
-	}
 
 	.produkt_pris {
 		justify-self: start;

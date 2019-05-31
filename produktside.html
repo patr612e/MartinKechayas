@@ -127,7 +127,7 @@
 		<div class="produkt_info">
 
 			<div class="produkt_pris">
-				<p> <b>Fra 38.000 kr.</b></p>
+				<p id="førpris">Fra 38.000,00 kr.</p>
 			</div>
 			<div class="produkt_farver">
 				<img src="farvevalg_1.svg" alt="farvevalg_1">
@@ -137,12 +137,41 @@
 				<img src="farvevalg_5.svg" alt="farvevalg_5">
 			</div>
 
-			<div class="produkt_deltajer">
-				<p>Produkt detajler <b>+</b> </p>
-			</div>
+			<button class="produkt_købknap">Læg i indskøbskurv</button>
 
-			<div class="produkt_købknap">
-				<p>Køb</p>
+
+			<div class="option">
+				<input type="checkbox" id="toggle1" class="toggle" />
+				    <label class="title" for="toggle1">Produkt detajler
+				</label>
+				<div class="content">
+					<p>
+
+						<b>MÅL OG VÆGT</b>
+						<br>
+						Højde: 63 cm
+						<br>
+						Bredde: 288 cm
+						<br>
+						Dybde: 181 cm
+						<br>
+
+						<br>
+						<b>MATERIALER</b>
+						<br>
+						Sammensætning: Ratten stof
+						<br>
+						Ben/base: Træ
+						<br>
+						Ryglæn: Fiber vatteret
+						<br>
+						Rygpude: Skum-/fjerblanding
+						<br>
+						Ramme: Massivt træ, spånplade, krydsfiner
+						<br>
+						Sæde: Skum Vatteret
+					</p>
+				</div>
 			</div>
 
 		</div>
@@ -322,6 +351,21 @@
 			}
 			slides[slideIndex - 1].style.display = "block";
 			dots[slideIndex - 1].className += " active";
+		}
+
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var panel = this.nextElementSibling;
+				if (panel.style.display === "block") {
+					panel.style.display = "none";
+				} else {
+					panel.style.display = "block";
+				}
+			});
 		}
 	</script>
 </body>
