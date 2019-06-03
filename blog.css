@@ -437,49 +437,47 @@ input[type=submit]:hover {
 
 @media screen and (min-width: 700px) {
 
-	.grid-container {
-		grid-template-columns: 1fr;
-		justify-items: center;
 
+	.grid-container {                                /* én kolonne på tablet (på desktop ser griddet anderledes ud, bla. med en
+                                                        kolonne til venste til sidebarmenu) - derfor er griddet nødvendigt */
+		grid-template-columns: 1fr;
 	}
+
 
 	section {
-		grid-template-columns: 1fr 1fr;
-		grid-template-areas: "one two";
-	}
+		grid-template-columns: 1fr 1fr;              /* section defineres med to kolonner*/
 
-	.blog-text {
-		align-self: center;
+		grid-template-areas: "one two";              /* navngiver kolonnerne one & two*/
 	}
 
 
 
-	section:nth-child(odd) .blog-billede {
+
+	section:nth-child(odd) .blog-billede {           /* ved hver ulige section skal blog-billede ligge i kolonne "one" (venstre) */
 		grid-area: one;
 		justify-self: right;
 	}
 
-	section:nth-child(even) .blog-billede {
+	section:nth-child(even) .blog-billede {          /* ved hver lige section skal blog-billede ligge i kolonne "two" (højre) */
 		grid-area: two;
 	}
 
-
-
-	section:nth-child(odd) .blog-text {
+	section:nth-child(odd) .blog-text {              /* ved hver ulige section skal blog-text ligge i kolonne "two" (højre)*/
 		grid-area: two;
 	}
 
-	section:nth-child(even) .blog-text {
+	section:nth-child(even) .blog-text {             /* ved hver lige section skal blog-text ligge i kolonne "one" (venstre) */
 		grid-area: one;
 		text-align: right;
-
 	}
 
-	section:nth-child(even) .blog-text .tekst {
+	section:nth-child(even) .blog-text .tekst {      /* tekst, der ligger i venstre kolonne skal alignes til højre*/
 		text-align: right;
-
 	}
 
+	.blog-text {                                     /* tekst skal centreres vertikalt*/
+		align-self: center;
+	}
 
 }
 

@@ -83,28 +83,30 @@
 
     <!--MAIN START-->
 
-    <div class="grid-container">
+    <div class="grid-container">                  // det overordnede grid til html'en
 
 
-        <main class="blogindlaeg">
+        <main class="blogindlaeg">                // templaten nedenfor bliver klonet ind i denne main
 
         </main>
 
 
 
 
-        <template>
+        <template>                                // templaten, der bliver klonet til .blogindlaeg
 
-            <section>
-                <div class="blog-text">
-                    <p class="dato"></p>
-                    <h2 class="titel"></h2>
-                    <p class="paragraph"></p>
+            <section>                             // section, som der er et basic 2-column grid på (1fr 1fr)
+
+                <div class="blog-text">           // parent, som blog postens tekst er inden i
+
+                    <p class="dato"></p>          // dato
+                    <h2 class="titel"></h2>       // overskrift
+                    <p class="paragraph"></p>     // tekst
 
                 </div>
 
-                <div class="blog-billede">
-                    <img src="">
+                <div class="blog-billede">        // parent, som blog postens billede er inden i
+                    <img src="">                  // billede
                 </div>
 
             </section>
