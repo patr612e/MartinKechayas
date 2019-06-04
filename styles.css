@@ -384,11 +384,17 @@ label {
     font-size: 3.2em;
 }
 
-.messe {
-    line-height: 0.2em;
-    margin: 0.5em 0em 0em 0em;
-    background-color: #D8B453;
+@media only screen and (max-width: 1000px) {
+
+    .messe {
+        line-height: 0.2em;
+        margin: 0.5em 0em 0em 0em;
+        background-color: #D8B453;
+    }
+
 }
+
+
 
 .messe h4 {
     margin-top: 1em;
@@ -619,18 +625,18 @@ h2 {
     }
 
     .terra_titel {
-        grid-column: 3/8;
+        grid-column: 4/9;
         grid-row: 6/7;
         justify-self: end;
     }
 
     .terra_tekst {
-        grid-column: 3/7;
+        grid-column: 4/8;
         grid-row: 7/8
     }
 
     .terra_billede {
-        grid-column: 7/12;
+        grid-column: 8/13;
         grid-row: 5/8;
     }
 
@@ -684,11 +690,10 @@ h2 {
         grid-column: 3/10;
         grid-row: 11/12;
         justify-self: end;
-
     }
 
     .pendant_tekst {
-        grid-column: 4/8;
+        grid-column: 3/8;
         grid-row: 12/13;
     }
 
@@ -785,8 +790,8 @@ h2 {
 
     .messe {
         position: absolute;
-        top: 43vw;
-        left: 82vw;
+        top: 38vw;
+        left: 83vw;
         z-index: 3;
 
     }
@@ -828,7 +833,7 @@ h2 {
     }
 
     .pendant_tekst {
-        grid-column: 4/8;
+        grid-column: 4/9;
         grid-row: 12/13;
     }
 
@@ -1063,15 +1068,15 @@ input[type=submit]:hover {
         width: 25vw;
     }
 
-    /*
+
     .messe {
         position: absolute;
-        top: 43vw;
-        left: 82vw;
+        top: 41vw;
+        left: 84vw;
         z-index: 3;
 
     }
-*/
+
 }
 
 
