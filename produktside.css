@@ -38,6 +38,7 @@ img {
 
 .burgermenu {
 	position: fixed;
+	z-index: 3;
 }
 
 #menuknap {
@@ -47,7 +48,6 @@ img {
 	font-size: 1.5em;
 	top: 0em;
 	color: black;
-	z-index: 2;
 	font-family: arial;
 	cursor: pointer;
 
@@ -459,8 +459,8 @@ h1 {
 	text-transform: uppercase;
 	font-weight: 500;
 	display: block;
-	z-index: 2;
-	width: 252px;
+	z-index: 1;
+	width: 392px;
 	padding: 1.8em;
 	color: black;
 	border: 1px solid black;
@@ -519,8 +519,9 @@ h1 {
 	backface-visibility: hidden;
 	transform: translateZ(0);
 	transition: all 0.2s;
-	width: 230px;
+	width: 370px;
 	margin: 0;
+	z-index: 1;
 }
 
 .title {
@@ -556,7 +557,7 @@ h1 {
 	background-color: #fff;
 	color: rgba(0, 0, 0, 0.7);
 	font-size: 0.7em;
-	width: 250px;
+	width: 390px;
 }
 
 .content p {
@@ -584,7 +585,7 @@ h1 {
 
 #tekst1 {
 	grid-row: 4/5;
-	margin: 2em;
+	margin: 0 2em 2em 2em;
 	font-weight: 500;
 }
 
@@ -601,11 +602,13 @@ h1 {
 
 .cocoon_billede1 {
 	grid-row: 6/7;
+	padding: 0;
+	margin: 0;
 }
 
 #cocoon_billede2 {
 	grid-row: 7/8;
-	margin: 0 2em 2em 2em;
+	margin: 2em 2em 2em 2em;
 }
 
 .hook_billede {
