@@ -396,12 +396,22 @@ label {
 
 
 
-.messe h4 {
+.næste_messe {
     margin-top: 1em;
     font-family: europa, sans-serif;
     font-size: 1em;
     color: #aa7f3a;
+    cursor: pointer;
 }
+
+.næste_messe:hover {
+    color: #2e327c;
+}
+
+.messe a {
+    text-decoration: none;
+}
+
 
 #blog {
     text-transform: uppercase;
@@ -519,7 +529,8 @@ label {
 .click:hover {
     cursor: pointer;
     transform: scale(0.97);
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
+
 
 }
 
