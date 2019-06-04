@@ -343,7 +343,7 @@ label {
 	width: auto;
 	padding: 16px;
 	margin-top: -22px;
-	color: #A68D6F;
+	color: #BF6545;
 	font-weight: bold;
 	font-size: 18px;
 	transition: 0.6s ease;
@@ -363,7 +363,7 @@ label {
 	height: 15px;
 	width: 15px;
 	margin: 0 2px;
-	background-color: #e8e6e4;
+	background-color: #e3d3ce;
 	border-radius: 50%;
 	display: inline-block;
 	transition: background-color 0.6s ease;
@@ -371,7 +371,7 @@ label {
 
 .active,
 .dot:hover {
-	background-color: #A68D6F;
+	background-color: #BF6545;
 }
 
 /* Fading animation
