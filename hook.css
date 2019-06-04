@@ -343,7 +343,7 @@ label {
 	width: auto;
 	padding: 16px;
 	margin-top: -22px;
-	color: #48504F;
+	color: #A68D6F;
 	font-weight: bold;
 	font-size: 18px;
 	transition: 0.6s ease;
@@ -363,7 +363,7 @@ label {
 	height: 15px;
 	width: 15px;
 	margin: 0 2px;
-	background-color: #bababa;
+	background-color: #e8e6e4;
 	border-radius: 50%;
 	display: inline-block;
 	transition: background-color 0.6s ease;
@@ -371,7 +371,7 @@ label {
 
 .active,
 .dot:hover {
-	background-color: #48504F;
+	background-color: #A68D6F;
 }
 
 /* Fading animation
@@ -777,23 +777,6 @@ input[type=submit]:hover {
 
 
 
-	.produkt_købknap {
-		width: 332px;
-
-	}
-
-	.title,
-	.content {
-
-		width: 310px;
-
-	}
-
-
-	.content {
-		width: 330px;
-	}
-
 	#tekst4 {
 		grid-row: 13/14;
 		margin: 0em;
@@ -871,6 +854,23 @@ input[type=submit]:hover {
 
 @media screen and (min-width: 700px) {
 
+
+	.produkt_købknap {
+		width: 282px;
+
+	}
+
+	.title,
+	.content {
+
+		width: 260px;
+
+	}
+
+
+	.content {
+		width: 280px;
+	}
 
 	.grid-container {
 		display: grid;
@@ -1151,6 +1151,23 @@ input[type=submit]:hover {
 @media screen and (min-width: 1000px) {
 
 
+	.produkt_købknap {
+		width: 332px;
+
+	}
+
+	.title,
+	.content {
+
+		width: 310px;
+
+	}
+
+
+	.content {
+		width: 330px;
+	}
+
 	.grid-container {
 		display: grid;
 		grid-template-columns: 13em 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -1331,7 +1348,8 @@ input[type=submit]:hover {
 		grid-column: 2/7;
 		grid-row: 6/7;
 		margin: 4em 0 0 0;
-		/*		box-shadow: 40px 40px 0px #2E327C;*/
+		box-shadow: 40px 40px 0px #2E327C;
+		*/
 	}
 
 	#cocoon_billede2 {
