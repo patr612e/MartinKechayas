@@ -23,7 +23,6 @@ img {
 
 /*********************** burger menu start *******************************/
 
-
 .hidden {
 	display: none;
 }
@@ -461,7 +460,7 @@ h1 {
 	font-weight: 500;
 	display: block;
 	z-index: 1;
-	width: 84vw;
+	width: 86vw;
 	padding: 1.8em;
 	color: black;
 	border: 1px solid black;
