@@ -474,9 +474,11 @@ input[type=submit]:hover {
     grid-template-columns: 1fr;
 }
 
+/*
 .blog-billede {
     padding: 0.5em;
 }
+*/
 
 
 
@@ -491,7 +493,7 @@ img {
 
 section {
     display: grid;
-    margin: 5em 0 5em 0;
+/*    margin: 5em 0 5em 0;*/
 }
 
 section:first-child {
