@@ -424,7 +424,7 @@ label {
 
 .titel {
 	line-height: 0.8em;
-	font-weight: 600;
+	font-weight: 500;
 }
 
 .blog-text {
@@ -625,7 +625,6 @@ section:last-child {
 
 
 .titel {
-	text-transform: uppercase;
 	font-size: 2em;
 }
 
