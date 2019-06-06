@@ -5,6 +5,9 @@
  	console.log("siden vises!");
  	// registrer klik på menu-knap
  	document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+
+ 	document.querySelector("#menuknap").classList.add("menuknapned");
+
  }
 
  function toggleMenu() {
@@ -17,10 +20,16 @@
  		//menuen er nu skjult - ændr menuknap til lll
  		document.querySelector("#menuknap").textContent = "☰";
  		document.querySelector(".grid-container").classList.remove("hidden");
+ 		document.querySelector("#menuknap").classList.remove("menuknapned");
 
  		// tilføje scroll igen
  		document.querySelector("body").classList.remove("overflow")
  		document.querySelector(".burgermenu").classList.remove("background");;
+ 		document.querySelector("#menuknap").classList.remove("menuknapnormal");
+
+ 		document.querySelector("#menuknap").classList.add("menuknapned");
+
+
  	} else {
  		//menuen er nu vist - ændr menuknap til x
  		document.querySelector("#menuknap").textContent = "X"
@@ -30,7 +39,8 @@
  		document.querySelector("body").classList.add("overflow");
 
  		document.querySelector(".burgermenu").classList.add("background");
-
+ 		document.querySelector("#menuknap").classList.add("menuknapnormal");
+ 		document.querySelector("#menuknap").classList.remove("menuknapned");
  	}
  }
 
