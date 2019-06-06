@@ -422,14 +422,14 @@ nav {
 
 .grafik_parent {
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
 	width: 100%;
 	padding-top: 1.5em;
 }
 
 .grafik_parent2 {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: center;
 	width: 100%;
 	padding-top: 1.5em;
 }
@@ -558,7 +558,7 @@ nav {
 }
 
 .container img {
-	width: 100%;
+	width: 150%;
 }
 
 .timeline {
@@ -993,4 +993,7 @@ input[type=submit]:hover {
 	input[type=text] {
 		width: 200px;
 	}
+
+
+
 }
