@@ -786,6 +786,13 @@ input[type=submit]:hover {
 }
 
 
+.footer-titel2 {
+	font-weight: 600;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	line-height: 1.7em;
+	letter-spacing: 0.1em;
+}
 
 
 
