@@ -862,7 +862,7 @@ h2 {
     }
 
     .pendant_titel {
-        grid-column: 3/10;
+        grid-column: 3/8;
         grid-row: 11/12;
         justify-self: end;
         font-size: 2em;
@@ -1128,11 +1128,11 @@ input[type=submit]:hover {
 }
 
 .footer-titel2 {
-	font-weight: 600;
-	font-size: 0.8em;
-	text-transform: uppercase;
-	line-height: 1.7em;
-	letter-spacing: 0.1em;
+    font-weight: 600;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    line-height: 1.7em;
+    letter-spacing: 0.1em;
 }
 
 
@@ -1385,7 +1385,7 @@ input[type=submit]:hover {
     }
 
     .pendant_titel {
-        grid-column: 3/10;
+        grid-column: 3/9;
         grid-row: 11/12;
         justify-self: end;
     }
