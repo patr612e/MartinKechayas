@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="da">
 
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="terra.css">
+	<link rel="stylesheet" href="produktside.css">
 	<title>Cocoon Lounge</title>
 	<link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -20,7 +20,7 @@
 		<div id="menuknap">☰</div>
 		<div id="menu" class="hidden">
 			<a href="index.html">
-				<img src="LOGOFINAL.svg" class="logo_burger">
+				<img src="LOGOFINAL.svg" class="logo_burger" alt="">
 			</a>
 
 			<div class="ikoner_burger">
@@ -79,7 +79,16 @@
 
 
 
+	<div class="nyhedsbrev_background">
+		<div class="nyhedsbrev_div">
 
+			<h1>Tak for din tilmelding!</h1>
+			<p>Du vil nu modtage spændende nyheder og tilbud på din mail.</p>
+
+			<button class="nyhedsbrev_luk">LUK</button>
+
+		</div>
+	</div>
 	<!--MAIN START-->
 
 	<div class="grid-container">
@@ -106,16 +115,16 @@
 			<div class="slideshow-container">
 
 				<div class="mySlides fade">
-					<img src="terradias.png" style="width:100%">
+					<img src="terradias.png" style="width:100%" alt="">
 				</div>
 
 				<div class="mySlides fade">
-					<img src="terradias1.png" style="width:100%">
+					<img src="terradias1.png" style="width:100%" alt="">
 
 				</div>
 
 				<div class="mySlides fade">
-					<img src="terradias2.png" style="width:100%">
+					<img src="terradias2.png" style="width:100%" alt="">
 				</div>
 				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 				<a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -243,14 +252,14 @@
 
 			<div class="logo_footer">
 				<a href="index.html">
-					<img src="LOGOFINAL.svg" class="logo_footer">
+					<img src="LOGOFINAL.svg" class="logo_footer" alt="logo">
 				</a>
 			</div>
 
 			<div class="projekter_footer">
 				<ul>
-					<a href="#" class="footer-titel">Projekter</a>
-					<li><a href="produktside.html">Curve Chair</a></li>
+					<li> <a href="index.html" class="footer-titel">Produkter</a></li>
+					<li><a href="curvechair.html">Curve Chair</a></li>
 					<li><a href="tembolounge.html">Tembo Lounge</a></li>
 					<li><a href="hook.html">Hook</a></li>
 					<li><a href="materialpendant.html">Material Pendant</a></li>
@@ -264,7 +273,7 @@
 
 			<div class="kontakt_footer">
 				<ul>
-					<a href="#" class="footer-titel">Kontakt</a>
+					<li><a href="#" class="footer-titel">Kontakt</a></li>
 					<li>Strandgade 36, DK CPH.K</li>
 					<li>+45 25 56 34 34</li>
 					<li>Info@martinkechayas.com</li>
@@ -273,7 +282,7 @@
 
 			<div class="presse_footer">
 				<ul>
-					<a href="presse.html" class="footer-titel">Presse</a>
+					<li><a href="presse.html" class="footer-titel">Presse</a></li>
 					<li><a href="#">Cocoon Lounge Chair</a></li>
 					<li><a href="#">Atelier</a></li>
 				</ul>
@@ -281,7 +290,7 @@
 
 			<div class="followus_footer">
 				<ul>
-					<a href="" class="footer-titel">Følg os</a>
+					<li><a href="" class="footer-titel">Følg os</a></li>
 					<li><a href="https://www.instagram.com/martinkechayas/?hl=da">Instagram</a></li>
 					<li><a href="https://www.facebook.com/Martin-Kechayas-side-390838838433602/">Facebook</a></li>
 					<li><a href="https://www.linkedin.com/in/martin-kechayas-131a4117/">Linkedln</a></li>
@@ -292,7 +301,7 @@
 			<div class="nyhedsbrev_footer">
 				<p class="footer-titel">Nyhedsbrev tilmeldning</p>
 				<input type="text" placeholder="E-mail" name="email" required>
-				<input type="submit" value="Submit">
+				<input class="nyhedsbrev_knap" type="submit" value="Submit">
 			</div>
 
 			<div class="copyright_footer">
@@ -391,6 +400,26 @@
 			});
 		}
 
+		ventNyhedsbrev();
+
+		function ventNyhedsbrev() {
+
+			console.log("NYHEDSBREV")
+			document.querySelector(".nyhedsbrev_knap").addEventListener("click", åbnPopUp);
+
+
+			function åbnPopUp() {
+
+				document.querySelector(".nyhedsbrev_background").style.display = "block";
+
+			}
+
+
+			document.querySelector(".nyhedsbrev_luk").addEventListener("click", () => {
+				document.querySelector(".nyhedsbrev_background").style.display = "none";
+			})
+
+		}
 	</script>
 </body>
 
