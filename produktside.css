@@ -450,7 +450,7 @@ label {
 	width: auto;
 	padding: 16px;
 	margin-top: -22px;
-	color: black;
+	color: #2E327C;
 	font-weight: bold;
 	font-size: 18px;
 	transition: 0.6s ease;
@@ -478,7 +478,7 @@ label {
 
 .active,
 .dot:hover {
-	background-color: black;
+	background-color: #2E327C;
 }
 
 /* Fading animation
@@ -568,7 +568,7 @@ h1 {
 	font-weight: 500;
 	display: block;
 	z-index: 1;
-	width: 86vw;
+	width: 390px;
 	padding: 1.8em;
 	color: black;
 	border: 1px solid black;
@@ -627,7 +627,6 @@ h1 {
 	backface-visibility: hidden;
 	transform: translateZ(0);
 	transition: all 0.2s;
-	width: 81vw;
 	margin: 0;
 	z-index: 1;
 }
@@ -641,6 +640,7 @@ h1 {
 	font-size: 0.6em;
 	border: 1px solid black;
 	cursor: pointer;
+	width: 367px;
 }
 
 .title:after,
