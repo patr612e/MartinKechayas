@@ -19,6 +19,10 @@ img {
 	width: 100%;
 }
 
+h2 {
+	font-weight: 500;
+}
+
 /*--- NYHEDSBREV POP-UP START ---*/
 
 
@@ -492,6 +496,16 @@ nav {
 
 }
 */
+.container a {
+	margin-top: 1em;
+	text-decoration: none;
+	color: #151515;
+	font-size: 0.7em;
+	font-weight: 100;
+	text-transform: uppercase;
+	border: 1px solid grey;
+	padding: 0.5em 2em 0.5em 2em;
+}
 
 
 .timeline img {
@@ -527,9 +541,6 @@ nav {
 	box-sizing: border-box;
 }
 
-h3 {
-	font-family: sans-serif;
-}
 
 .container {
 	overflow: hidden;
@@ -786,6 +797,13 @@ input[type=submit]:hover {
 }
 
 
+.footer-titel2 {
+	font-weight: 600;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	line-height: 1.7em;
+	letter-spacing: 0.1em;
+}
 
 
 
@@ -805,7 +823,7 @@ input[type=submit]:hover {
 		grid-row: 1/2;
 		z-index: 1;
 		margin-top: 5em;
-		margin-left: 2em;
+		margin-left: 0.5em;
 
 	}
 
@@ -890,8 +908,9 @@ input[type=submit]:hover {
 
 	.title {
 		grid-column: 3/5;
-		margin-top: 2em;
-		font-size: 3em;
+		margin-top: 2.4em;
+		font-size: 2.5em;
+		margin-left: 1.7em;
 	}
 
 	.tekst {
