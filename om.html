@@ -314,32 +314,12 @@
 				if (timeline_events[i].offsetTop < threshold_position) {
 					timeline_events[i].classList.add('visible');
 				} else {
-					timeline_events[i].classList.remove('visible');
+					timeline_events[i].classList.add('visible');
 				}
 			}
 		}
 		timeline();
 
-		ventNyhedsbrev();
-
-		function ventNyhedsbrev() {
-
-			console.log("NYHEDSBREV")
-			document.querySelector(".nyhedsbrev_knap").addEventListener("click", åbnPopUp);
-
-
-			function åbnPopUp() {
-
-				document.querySelector(".nyhedsbrev_background").style.display = "block";
-
-			}
-
-
-			document.querySelector(".nyhedsbrev_luk").addEventListener("click", () => {
-				document.querySelector(".nyhedsbrev_background").style.display = "none";
-			})
-
-		}
 	</script>
 
 	<script src="om.js"></script>

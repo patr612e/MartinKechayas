@@ -71,3 +71,25 @@
  }
 
  hentJson1();
+
+
+ ventNyhedsbrev();
+
+ function ventNyhedsbrev() {
+
+ 	console.log("NYHEDSBREV")
+ 	document.querySelector(".nyhedsbrev_knap").addEventListener("click", åbnPopUp);
+
+
+ 	function åbnPopUp() {
+
+ 		document.querySelector(".nyhedsbrev_background").style.display = "block";
+
+ 	}
+
+
+ 	document.querySelector(".nyhedsbrev_luk").addEventListener("click", () => {
+ 		document.querySelector(".nyhedsbrev_background").style.display = "none";
+ 	})
+
+ }
