@@ -181,7 +181,7 @@ img {
 	right: 1.5em;
 	padding-top: 4.5em;
 	list-style-type: none;
-	width: 100vw;
+	/*	width: 100vw;*/
 	z-index: 1;
 	color: #efeded;
 	text-align: right;
@@ -587,7 +587,7 @@ h1 {
 .produkt_købknap:hover {
 	display: block;
 	color: white;
-	background: #2E327C;
+	background-color: #2E327C;
 	border: 1px solid #2E327C;
 	cursor: pointer;
 }
@@ -1397,30 +1397,25 @@ input[type=submit]:hover {
 		z-index: 2;
 	}
 
-	.produkt_titel {
-		grid-row: 1/2;
-		grid-column: 8/15;
-		margin-left: 0.5em;
-		margin-top: 1em;
-		font-size: 2.5em;
-		z-index: 2;
-	}
 
 	.diasshow {
 		z-index: 1;
-		grid-column: 3/8;
-		grid-row: 1/3;
+		grid-column: 4/8;
+		grid-row: 1/2;
 		margin-top: 2em;
-
 	}
 
 	.produkt_info {
 		grid-row: 1/2;
-		grid-column: 8/14;
+		grid-column: 8/12;
 		margin: 2em;
-		margin-top: 18em;
-		text-align: left;
+		margin-top: 20em;
 		z-index: 2;
+
+	}
+
+	.produkt_pris {
+		text-align: left;
 	}
 
 	.produkt_pris {
@@ -1656,7 +1651,7 @@ input[type=submit]:hover {
 
 	.produkt_titel {
 		grid-row: 1/2;
-		grid-column: 8/15;
+		grid-column: 7/15;
 		margin-top: 1em;
 		margin-left: 2em;
 		margin-left: 2.7em;
@@ -1666,13 +1661,13 @@ input[type=submit]:hover {
 
 	.diasshow {
 		z-index: 1;
-		grid-column: 4/9;
+		grid-column: 4/8;
 		grid-row: 1/2;
 	}
 
 	.produkt_info {
 		grid-row: 1/2;
-		grid-column: 9/14;
+		grid-column: 8/12;
 		margin: 2em;
 		margin-top: 20em;
 		z-index: 2;

@@ -1266,21 +1266,24 @@ input[type=submit]:hover {
 
 	.cocoon_titel {
 		grid-column: 5/9;
-		grid-row: 3/4
+		grid-row: 1/4;
+		margin-top: 1em;
 	}
 
 	.cocoon_tekst {
 		grid-column: 6/11;
-		grid-row: 4/5
+		grid-row: 2/5;
+		margin-left: 7em;
+		margin-top: 3em;
 	}
 
 	.cocoon_billede {
-		grid-column: 2/6;
-		grid-row: 3/6
+		grid-column: 2/7;
+		grid-row: 1/6;
 	}
 
 	.cocoon_billede img {
-		max-width: 400px;
+		max-width: 450px;
 	}
 
 	.curve_titel {
@@ -1379,6 +1382,7 @@ input[type=submit]:hover {
 	.woody_billede {
 		grid-column: 3/8;
 		grid-row: 8/11;
+		margin-top: 0em;
 	}
 
 	.woody_billede img {
@@ -1416,19 +1420,23 @@ input[type=submit]:hover {
 	.bigback_tekst {
 		grid-column: 5/9;
 		grid-row: 12/13;
+		margin-top: 2em;
+		margin-bottom: 6em;
 	}
 
 	.bigback_billede {
 		grid-column: 9/13;
-		grid-row: 11/13;
+		grid-row: 10/13;
+
 	}
 
 	.bigback_billede img {
-		max-width: 400px;
+		max-width: 450px;
 	}
 
 
 }
+
 
 @media screen and (min-width: 1200px) {
 
